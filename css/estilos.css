@@ -1,0 +1,95 @@
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --veryLightGray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: var(--transparentWhite);
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--veryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: var(--veryLightGray);
+    display: flex;
+    width: 1440px;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 700px;
+}
+    .izquierdo{
+        background-color: var(--brightOrange);
+        justify-content: center;
+        border-right: 1px solid black;
+        padding: 80px 110px 40px 90px;
+    }
+    .medio{
+        background-color: var(--darkCyan);
+        justify-content: center;
+        border-right: 1px solid black;
+        padding: 80px 110px 40px 90px;
+    }
+    .derecho{
+        background-color: var(--veryDarkCyan);
+        justify-content: center;
+        padding: 80px 110px 40px 90px;
+    }
+h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+p{
+    line-height: 1.8;
+    font-size: 2rem;
+    margin-bottom: 120px;
+}
+.botonI{
+    font-size: 2.5rem;
+    border: 1px solid var(--brightOrange);
+    border-radius: 30px;
+    padding: 18px 36px;
+    color: var(--brightOrange);
+}
+    .botonI:hover{
+        background-color: var(--brightOrange);
+        border: 1px solid var(--veryLightGray);
+        color: var(--veryLightGray);
+    }
+.botonC{
+    font-size: 2.5rem;
+    border: 1px solid var(--darkCyan);
+    border-radius: 30px;
+    padding: 18px 36px;
+    color: var(--darkCyan);
+}
+    .botonC:hover{
+        background-color: var(--darkCyan);
+        border: 1px solid var(--veryLightGray);
+        color: var(--veryLightGray);
+    }
+.botonD{
+    font-size: 2.5rem;
+    border: 1px solid var(--veryDarkCyan);
+    border-radius: 30px;
+    padding: 18px 36px;
+    color: var(--veryDarkCyan);
+}
+    .botonD:hover{
+        background-color: var(--veryDarkCyan);
+        border: 1px solid var(--veryLightGray);
+        color: var(--veryLightGray);
+    }
